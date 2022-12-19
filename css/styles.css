@@ -1,59 +1,87 @@
 body{
-    background-color:hsl(30, 38%, 92%);
-    margin: 20%;
+    margin: 0;
+    padding: 0;
+    background-color: hsl(30deg, 38%, 92%);
+    font-size:1.2rem;
+    font-family: "montserrat", sans-serif;
 }
-
-
-
-
 img{
-    width: 300px;
-    height: 500px;
-    object-fit: scale-down;
+    display: block;
+    max-width: 100%;
+}
+
+.container{
+    
+    max-width: 50rem;
+    border-radius: 1.5rem;
+    overflow:hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin:auto;
 
 }
 
-/*******************CLASS SELECTORS*****************/
-
-.div1{
-    width: 50%;
-    float: left;
+.container-details{
+    color: hsl(228deg, 12%, 48%);
+    background-color: hsl(0deg, 0%, 100%);
+    padding-left: 1.5rem;
+    padding-right:1.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
+.container-sub{
+    text-transform: uppercase;
+    letter-spacing: 0.65rem;
+}
+.container-heading{
+    font-family: "fraunces";
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    color: black;
+}
+.container-description{
+    line-height: 1.4;
+}
+.container-prices{
+    display:flex;
+    column-gap:2rem;
+    align-items: center;
+}
+.container-price-1{
+    color: hsl(212deg, 21%, 14%);
+    font-size: 2.5rem;
+    font-family: "fraunces";
+    font-weight: 700;
+    color: hsl(158deg, 36%, 37%);
 
 }
-.div2{
-    background-color: white;
-    width: 50%;
-    float: right;
+.container-price-2{
+    text-decoration: line-through;
 }
-.center{
-
-    width: 50%;
-    padding: auto;
-}
-
 .btn {
-    background: #1d7039;
-    background-image: -webkit-linear-gradient(top, #1d7039, #208542);
-    background-image: -moz-linear-gradient(top, #1d7039, #208542);
-    background-image: -ms-linear-gradient(top, #1d7039, #208542);
-    background-image: -o-linear-gradient(top, #1d7039, #208542);
-    background-image: linear-gradient(to bottom, #1d7039, #208542);
-    -webkit-border-radius: 8;
-    -moz-border-radius: 8;
-    border-radius: 8px;
+    background: #336607;
+    background-image: -webkit-linear-gradient(top, #336607, #0d7d05);
+    background-image: -moz-linear-gradient(top, #336607, #0d7d05);
+    background-image: -ms-linear-gradient(top, #336607, #0d7d05);
+    background-image: -o-linear-gradient(top, #336607, #0d7d05);
+    background-image: linear-gradient(to bottom, #336607, #0d7d05);
+    -webkit-border-radius: 11;
+    -moz-border-radius: 11;
+    border-radius: 11px;
     font-family: Arial;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 20px;
     padding: 10px 20px 10px 20px;
     text-decoration: none;
   }
   
   .btn:hover {
-    background: #b8b8b8;
-    background-image: -webkit-linear-gradient(top, #b8b8b8, #333333);
-    background-image: -moz-linear-gradient(top, #b8b8b8, #333333);
-    background-image: -ms-linear-gradient(top, #b8b8b8, #333333);
-    background-image: -o-linear-gradient(top, #b8b8b8, #333333);
-    background-image: linear-gradient(to bottom, #b8b8b8, #333333);
+    background: #39cc0c;
+    background-image: -webkit-linear-gradient(top, #39cc0c, #277805);
+    background-image: -moz-linear-gradient(top, #39cc0c, #277805);
+    background-image: -ms-linear-gradient(top, #39cc0c, #277805);
+    background-image: -o-linear-gradient(top, #39cc0c, #277805);
+    background-image: linear-gradient(to bottom, #39cc0c, #277805);
     text-decoration: none;
   }
